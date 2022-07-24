@@ -1,0 +1,65 @@
+  /**
+     * 确认出价
+     *
+     * @param projectId
+     * @param money
+     * @return
+     */
+    @ResponseBody
+    @PostMapping("/offer")
+    public Result<Boolean> offerPrice(@RequestParam("projectId") Long projectId, @RequestParam("money") int money) {
+        HomeUser loginedHomeUser = SessionUtil.getLoginedHomeUser();
+        BiddingProject biddingProject = biddingProjectService.find(projectId);
+        if (biddingProject == null) {
+            return Result.error(CodeMsg.ADMIN_BIDDING_PROJECT_NOT_EXIST_ERROR);
+        }
+        BiddingApply biddingApply = biddingApplyService.findByBiddingProjectIdAndHomeUserId(biddingProject.getId(), loginedHomeUser.getId());
+        if (biddingApply == null) {
+            return Result.error(CodeMsg.HOME_SIGN_UP_NOT_EXIST_ERROR);
+        }
+        //判断竞拍价是否大于起拍价
+        if(biddingProject.getStartPrice()>money){
+            return Result.error(CodeMsg.HOME_BIDDING_PROJECT_START_PRICE_ERROR);
+        }
+        //判断项目状态是否为竞价中
+        if (biddingProject.getProjectStatus() != ProjectStatus.BIDDING) {
+            return Result.error(CodeMsg.HOME_BIDDING_PROJECT_STATUS_ERROR);
+        }
+        //锁
+        long time = System.currentTimeMillis() + TIMEOUT;
+        synchronized(this) {
+            try {
+                boolean lock = redisLock.lock(projectId.toString(), String.valueOf(time));
+                if (!lock) {
+                    return Result.error(CodeMsg.HOME_BIDDING_PROJECT_PERSON_MANY);
+                }
+                //开始竞价
+                String maxMoney = redisTemplate.opsForValue().get("stock" + projectId);
+                //如果Redis中为空
+                if (StringUtils.isEmpty(maxMoney)) {
+                    //从数据库获取
+                    BiddingRecord leadingRecord = biddingRecordService.findByBiddingProjectIdAndBiddingStatus(projectId);
+                    if (leadingRecord == null) {
+                        //如果Redis中为空 数据库中也为空
+                        return recordNotExist(biddingProject, money, loginedHomeUser, time);
+                    } else {
+                        //如果Redis中为空 数据库中不为空
+                        return recordExist(biddingProject, money, loginedHomeUser, time, leadingRecord);
+                    }
+                } else {
+                    //如果Redis中不为空
+                    Integer maxMoneys = Integer.valueOf(maxMoney);
+                    //判断竞价价格和最高价格
+                    if (maxMoneys < money) {
+                        maxMoneys = money;
+                        redisTemplate.opsForValue().set("stock" + projectId, String.valueOf(maxMoneys));
+                    }
+                    BiddingRecord oldRecord = biddingRecordService.findByBiddingProjectIdAndBiddingStatus(projectId);
+                    return recordRedisExist(biddingProject, maxMoneys, loginedHomeUser, oldRecord, time);
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+                return Result.error(CodeMsg.HOME_BIDDING_PROJECT_PERSON_MANY_ERROR);
+            }
+        }
+    }

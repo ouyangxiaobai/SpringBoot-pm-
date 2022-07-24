@@ -1,0 +1,270 @@
+﻿.nj-username-login .login-bg {
+  width: 100%;
+  height: 874px;
+  background-image: url(../images/artboard.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nj-username-login .login-bg .login-head {
+  width: 100%;
+  height: 110px;
+  line-height: 110px;
+  border-bottom: 2px solid #D90C19;
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+.nj-username-login .login-bg .login-head img {
+  width: 140px;
+  height: 80px;
+  margin-left: 80px;
+}
+.nj-username-login .login-bg .login-head span {
+  position: absolute;
+  top: -20px;
+  font-size: 18px;
+  color: #666666;
+  letter-spacing: 0;
+  margin-left: 40px;
+}
+.nj-username-login .login-bg .login-block {
+  width: 487px;
+  height: 460px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+}
+.nj-username-login .login-bg .login-block .login-block-head {
+  width: 487px;
+  background-color: #D91715;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  padding: 20px 25px;
+}
+.nj-username-login .login-bg .login-block .login-block-head span {
+display: block;
+    float: left;
+    width: 82px;
+    height: 33px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 100px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nj-username-login .login-bg .login-block .login-block-sel {
+  height: 71px;
+  width: 487px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nj-username-login .login-bg .login-block .login-block-sel span {
+  font-size: 18px;
+}
+.nj-username-login .login-bg .login-block .login-block-sel span:hover {
+  color: #D91715;
+}
+.nj-username-login .login-bg .login-block .login-block-sel .login {
+  color: #666666;
+}
+.nj-username-login .login-bg .login-block .login-block-sel .login.on {
+  color: #D91715;
+}
+.nj-username-login .login-bg .login-block .contentbox {
+  height: 318px;
+  width: 100%;
+}
+.nj-username-login .login-bg .login-block .contentbox > div {
+  text-align: center;
+  display: none;
+}
+.nj-username-login .login-bg .login-block .contentbox > div[class="box active"] {
+  display: block;
+}
+.nj-username-login .login-bg .login-block .content-iphone,
+.nj-username-login .login-bg .login-block .content-username {
+  width: 100%;
+  height: 318px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 20px;
+}
+.nj-username-login .login-bg .login-block .content-iphone input,
+.nj-username-login .login-bg .login-block .content-username input {
+  background: none;
+  outline: none;
+  width: 80%;
+  height: 100%;
+  border: none;
+  padding-left: 8px;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item:hover,
+.nj-username-login .login-bg .login-block .content-username .content-item:hover {
+  border: 1px solid #D91715;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item,
+.nj-username-login .login-bg .login-block .content-username .content-item {
+  width: 415px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item i,
+.nj-username-login .login-bg .login-block .content-username .content-item i {
+  color: #D91715;
+  font-size: 26px;
+  margin: 0 10px 0 17px;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item-verify,
+.nj-username-login .login-bg .login-block .content-username .content-item-verify {
+  width: 415px;
+  height: 50px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item-verify .item-verify:hover,
+.nj-username-login .login-bg .login-block .content-iphone .content-item-verify .item-verify-code:hover,
+.nj-username-login .login-bg .login-block .content-username .content-item-verify .item-verify:hover,
+.nj-username-login .login-bg .login-block .content-username .content-item-verify .item-verify-code:hover {
+  border: 1px solid #D91715;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item-verify .item-verify,
+.nj-username-login .login-bg .login-block .content-username .content-item-verify .item-verify {
+  width: 70%;
+  height: 48px;
+  line-height: 50px;
+  border: 1px solid #E4E4E4;
+  overflow: hidden;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item-verify .item-verify i,
+.nj-username-login .login-bg .login-block .content-username .content-item-verify .item-verify i {
+  font-size: 18px;
+  color: #D91715;
+  margin: 0 5px 0 20px;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item-verify .item-verify-code,
+.nj-username-login .login-bg .login-block .content-username .content-item-verify .item-verify-code {
+  width: 25%;
+  height: 48px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #E4E4E4;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-item-verify .item-verify-code span,
+.nj-username-login .login-bg .login-block .content-username .content-item-verify .item-verify-code span {
+  font-size: 16px;
+  color: #D91715;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-btn,
+.nj-username-login .login-bg .login-block .content-username .content-btn {
+  width: 415px;
+  height: 50px;
+  background: #D91715;
+  border-radius: 4px;
+  line-height: 50px;
+}
+.nj-username-login .login-bg .login-block .content-iphone .content-btn span,
+.nj-username-login .login-bg .login-block .content-username .content-btn span {
+  font-size: 16px;
+  color: #FBFBFB;
+}
+.nj-username-login .login-bg .login-block .content-iphone .member-text,
+.nj-username-login .login-bg .login-block .content-username .member-text {
+  font-size: 14px;
+  color: #999999;
+}
+
+
+
+.demand-item {
+  display: inline-block;
+  font-size: 12px;
+  color: #D91715;
+  width: 90%;
+  margin-top: -20px;
+  margin-bottom: -20px; 
+  margin-left: 5%;
+  text-align: left;
+}
+
+/* /* 新增登录按钮 */
+.lafite_three_login {
+position: absolute;
+    top: 8%;
+    right: 5%;
+}
+
+/* ������¼��ť */
+.lafite_three_login {
+position: absolute;
+    top: 8%;
+    right: 5%;
+}
+
+.login_tab {
+    color: #D91715!important;
+    background-color: #fff;
+}
+
+	
+.icon-dakai,.icon-guanbi2{
+  color: #979797!important;
+  font-size: 14px!important;
+}

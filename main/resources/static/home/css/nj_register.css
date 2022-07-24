@@ -1,0 +1,357 @@
+﻿.nj-register-20190412 .register-bg {
+  width: 100%;
+  height: 874px;
+  background-image: url(../images/artboard.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nj-register-20190412 .register-bg .margin-left-10 {
+  margin-left: 10px;
+}
+.nj-register-20190412 .register-bg .icon-size {
+  color: #D91715;
+  font-size: 28px;
+}
+.nj-register-20190412 .register-bg .register-head {
+  width: 100%;
+  height: 110px;
+  line-height: 110px;
+  border-bottom: 2px solid #D90C19;
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+.nj-register-20190412 .register-bg .register-head img {
+  width: 140px;
+  height: 80px;
+  margin-left: 80px;
+}
+.nj-register-20190412 .register-bg .register-head span {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+.nj-register-20190412 .register-bg .register-head .font-color1 {
+  color: #666666;
+  margin-left: 40px;
+}
+.nj-register-20190412 .register-bg .register-head .font-color2 {
+  color: #D91715;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.nj-register-20190412 .register-bg .flex-col-around {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nj-register-20190412 .register-bg .flex-col-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nj-register-20190412 .register-bg .register-block {
+  width: 510px;
+  height: 550px;
+  background-color: #ffffff;
+  padding: 15px 0;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+}
+.nj-register-20190412 .register-bg .register-block .block-content-item {
+  width: 406px;
+  height: 45px;
+  line-height: 45px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nj-register-20190412 .register-bg .register-block .block-content-item .title-span {
+  font-size: 26px;
+  color: #333333;
+}
+.nj-register-20190412 .register-bg .register-block .block-content-item label {
+  width: 22%;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.nj-register-20190412 .register-bg .register-block .block-content-item input {
+  background: #F6F6F6;
+  border: 1px solid #E4E4E4;
+  outline: none;
+  width: 78%;
+  height: 100%;
+  padding-left: 8px;
+}
+.nj-register-20190412 .register-bg .register-block .block-content-item .verify {
+  width: 51.9%;
+}
+.nj-register-20190412 .register-bg .register-block .block-content-item .verify-code {
+  width: 23.7%;
+  height: 100%;
+  background-color: #ffffff;
+  margin-left: 3%;
+  border: 1px solid #E4E4E4;
+}
+.nj-register-20190412 .register-bg .register-block .block-content-item .verify-code img {
+  width: 99%;
+  height: 99%;
+}
+.nj-register-20190412 .register-bg .register-block .block-from {
+  widows: 406px;
+  height: 320px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nj-register-20190412 .register-bg .register-block .content-btn {
+  width: 406px;
+  height: 45px;
+  background: #D91715;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #FBFBFB;
+  line-height: 45px;
+  text-align: center;
+}
+.nj-register-20190412 .register-bg .succeed-title {
+  width: 406px;
+  height: 56px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.nj-register-20190412 .register-bg .succeed-title i {
+  color: #D91715;
+  font-size: 36px;
+}
+.nj-register-20190412 .register-bg .succeed-title .text1 {
+  font-size: 26px;
+  color: #D91715;
+  margin-left: 10px;
+}
+.nj-register-20190412 .register-bg .succeed-title .text2 {
+  font-size: 18px;
+  color: #333333;
+}
+.nj-register-20190412 .register-bg .succeed-warnning-con {
+  width: 430px;
+  height: 67px;
+  background: #F2F2F2;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 10px 8px;
+}
+.nj-register-20190412 .register-bg .succeed-warnning-con .warnning-con-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 18px;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nj-register-20190412 .register-bg .succeed-warnning-con .warnning-con-item .dot {
+  background-color: #D91715;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+}
+.nj-register-20190412 .register-bg .succeed-warnning-con .warnning-con-item span {
+  font-size: 14px;
+  color: #999999;
+  margin-left: 5px;
+}
+.nj-register-20190412 .register-bg .succeed-Qr {
+  width: 406px;
+  height: 180px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+.nj-register-20190412 .register-bg .succeed-Qr img {
+  width: 150px;
+  height: 150px;
+}
+.nj-register-20190412 .register-bg .succeed-Qr span {
+  font-size: 16px;
+  color: #999999;
+}
+
+/* ����ע����֪��ʽ */
+.register-mask {
+  position        : fixed;
+  left            : 0;
+  top             : 0;
+  width           : 100%;
+  height          : 100%;
+  background-color: #333;
+  opacity         : 0.45;
+}
+
+.register-notice {
+    position: relative;
+    left: 50%;
+    margin-left: -453px;
+    margin-top: -800px;
+    width: 906px;
+    background-color: #fff;
+    padding: 10px 60px;
+}
+
+.register-notice h2 {
+  padding      : 20px 0;
+  border-bottom: 1px solid #e4e4e4;
+  font-size    : 28px;
+  color        : #333;
+  ;
+}
+
+.register-notice h3 {
+  text-align: center;
+  font-size : 24px;
+  color     : #666;
+  padding   : 20px 0;
+}
+
+.register-notice>p {
+  font-size     : 14px;
+  color         : #666;
+  line-height   : 33px;
+  padding-bottom: 10px;
+}
+
+.register-notice .register-notice-info{
+  width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.register-notice .register-notice-info>p {
+  font-size  : 14px;
+  color      : #666;
+  line-height: 32px;
+}
+
+.register-notice .register-btn {
+  width     : 100%;
+  text-align: center;
+  margin-top: 4em;
+}
+
+.register-notice h2{
+font-size  : 18px!important;
+}
+.register-notice h3{
+font-size  : 16px!important;
+}
+.register-notice .register-btn span {
+  display: inline-block;
+  width: 133px;
+  height: 50px;
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.register-notice .register-btn .left-re{
+  border: 1px solid #e4e4e4;
+  color: #666;
+  margin-right: 10px;
+}
+.register-notice .register-btn .right-re{
+  color: #fff;
+  margin-left: 10px;
+  background: #D91715;
+}
+.mask-remove{
+   display: none;
+}
